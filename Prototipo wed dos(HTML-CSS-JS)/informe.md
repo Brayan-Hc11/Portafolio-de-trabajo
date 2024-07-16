@@ -1,0 +1,1 @@
+tipo de diseño desktop firs 

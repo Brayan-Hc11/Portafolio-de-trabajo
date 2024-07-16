@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="browser">Proyecto uno (comercio electrónico)</title>
+    <!--Vinculo a los estilos -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!--contenedor del header -->
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">Vogue Chic</a>
+            <input type="checkbox" id="menu">
+            <!--Icono del menu de hamburgesa-->
+            <label for="menu">
+                <img src="../img/menu.png" alt="menu" class="menu-icono">
+            </label>
+            <!--Incorporación de la navegación-->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#" id="navbarInicio">Inicio</a></li>
+                    <li><a href="#" id="navbarServicios">Servicios</a></li>
+                    <li><a href="#" id="navbarProductos">Productos</a></li>
+                    <li><a href="#" id="navbarContacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <!--Separador de carrito de compras -->
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="../img/car.svg" alt="carrito" id="img-carrito">
+                        <div id="carrito">
+                            <table class="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th id="carritoImagen">Imagen</th>
+                                        <th id="carritoNombre">nombre</th>
+                                        <th id="carritoPrecio">precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciarCarrito"  class="btn-2">Vaciar carrito</a>
+                        </div>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+        <!--Contenido en el Header-->
+        <div class="header-content container">
+            <div class="header-img">
+                <img src="../img/right.png" alt="imagen de referencia">
+            </div>
+            <div class="header-txt">
+                <h1 id="titulo">Tendencias Actuales</h1>
+                <p id="slogan">Estrena elegancia y estilo con nuestras prendas.</p>
+                <a class="btn-1" onclick="cambiarIdioma('in')" >In English</a>
+                <a class="btn-1" onclick="cambiarIdioma('es')" >En Español</a>
+
+            </div>
+        </div>
+    </header>
+    <!--New section ofert content -->
+        <section class="ofert container">
+            <!--contenedor de ofertas-->
+            <div class="ofert-1">
+                <div class="ofert-img">
+                    <img src="../img/f1.png" alt="oferta numero uno">
+                </div>
+                <div class="ofert-txt">
+                    <h3 id="tituloOfert1">Accesorios para hombres</h3>
+                    <a href="#" class="btn-2"  id="botonOfert1">Información</a>
+                </div>
+            </div>
+
+            <div class="ofert-1">
+                <div class="ofert-img">
+                    <img src="../img/f2.png" alt="oferta numero uno">
+                </div>
+                <div class="ofert-txt">
+                    <h3 id="tituloOfert2">Calzados</h3>
+                    <a href="#" class="btn-2" id="botonOfert2">Información</a>
+                </div>
+            </div>
+
+            <div class="ofert-1">
+                <div class="ofert-img">
+                    <img src="../img/f3.png" alt="oferta numero uno">
+                </div>
+                <div class="ofert-txt">
+                    <h3 id="tituloOfert3">Accesorios para mujeres</h3>
+                    <a href="#" class="btn-2"  id="botonOfert3">Información</a>
+                </div>
+            </div>
+        </section>
+        <!--Section Principal Products-->
+        <main class="products container" id="lista-1">
+            <h2 id="tituloProducts">Productos</h2>
+            <div class="product-content">
+            <!--Presentation of the products-->  
+
+                <div class="product">
+                    <img src="../img/1.png" alt="product element">
+                    <div class="product-txt">
+                        <h3 id="tituloProductUno">Camisa Oxford de color negro</h3>
+                        <p id="parrafoProductUno">Calidad Premium</p>
+                        <p class="precio">COP $55.000,00</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="1" id="botonProductUno">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="../img/2.png" alt="product element">
+                    <div class="product-txt">
+                        <h3 id="tituloProductDos">Chaqueta cortavientos de color negro</h3>
+                        <p id="parrafoProductDos">Calidad Premium</p>
+                        <p class="precio">COP $150.000.00</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="2" id="botonProductDos">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="../img/3.png" alt="product element">
+                    <div class="product-txt">
+                        <h3 id="tituloProductTres">Gabán de color negro</h3>
+                        <p id="parrafoProductTres">Calidad Premium</p>
+                        <p class="precio">COP $210.000.00</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="3" id="botonProductTres">Agregar al carrito</a>
+                    </div>
+                </div>
+            
+                <div class="product">
+                    <img src="../img/4.png" alt="product element">
+                    <div class="product-txt">
+                        <h3 id="tituloProductCuatro">Camisa Oxford de color azul</h3>
+                        <p id="parrafoProductCuatro">Calidad Premium</p>
+                        <p class="precio">COP $65.000.00</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="4" id="botonProductCuatro">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="../img/5.png" alt="product element">
+                    <div class="product-txt">
+                        <h3 id="tituloProductCinco">Camisa Oxford clásica</h3>
+                        <p id="parrafoProductCinco">Calidad Premium</p>
+                        <p class="precio">COP $50.000.00</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="5" id="botonProductCinco">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="../img/6.png" alt="product element">
+                    <div class="product-txt">
+                        <h3 id="tituloProductSeis">Gabán Ovejero para mujer</h3>
+                        <p id="parrafoProductSeis">Calidad Premium</p>
+                        <p class="precio">COP $250.000.00</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="6" id="botonProductSeis">Agregar al carrito</a>
+                    </div>
+                </div>         
+            </div>
+        </main>
+        <!--New Section icons service-->
+        <section class="icons container">
+            
+            <div class="icon-1">
+                <div class="icon-img">
+                    <img src="../img/i1.svg" alt="Icono element 1">
+                </div>
+                <div class="icon-txt">
+                    <h3 id="serviciosUno">Asesoría de estilo personal</h3>
+                </div>
+            </div>
+            
+            <div class="icon-1">
+                <div class="icon-img">
+                    <img src="../img/i2.svg" alt="Icono element 1">
+                </div>
+                <div class="icon-txt">
+                    <h3 id="serviciosDos">Envío y devoluciones gratis</h3>
+                </div>
+            </div>
+
+            <div class="icon-1">
+                <div class="icon-img">
+                    <img src="../img/i3.svg" alt="Icono element 1">
+                </div>
+                <div class="icon-txt">
+                    <h3 id="serviciosTres">Lealtad y Descuentos unícos</h3>
+                </div>
+            </div>
+        </section>
+        <!--New Section  icons blogs--> 
+        <section class="blog container">
+
+            <div class="blog-1">
+                <img src="../img/b1.jpg" alt="Blog Element icon">
+                <h3 id="tituloBlogUno">Cómo Crear un Armario Capsule</h3>
+                <p id="parrafoBlogUno">
+                    Descubre la magia de un armario cápsula y aprende a simplificar tu vida con estilo. 
+                    En este artículo, te guiaremos paso a paso para construir una colección de prendas 
+                    versátiles y atemporales que se complementen entre sí.
+                </p>
+            </div>
+            
+            <div class="blog-1">
+                <img src="../img/b2.jpg" alt="Blog Element icon">
+                <h3 id="tituloBlogDos">Guía de Estilo para Diferentes Ocasiones</h3>
+                <p id="parrafoBlogDos">
+                    ¿Te has encontrado alguna vez frente a tu armario sin saber qué ponerte? Esta guía de estilo es
+                    tu solución perfecta. Aquí te presentamos consejos prácticos para elegir el outfit ideal para 
+                    cada ocasión, ya sea una boda, una cena formal, una reunión de trabajo o un día casual con amigos.
+                </p>
+            </div>
+            
+            <div class="blog-1">
+                <img src="../img/b3.jpg" alt="Blog Element icon">
+                <h3 id="tituloBlogTres">Tendencias de Moda para la Temporada</h3>
+                <p id="parrafoBlogTres">
+                    Descubre las últimas tendencias que están marcando la pauta esta temporada y transforma tu armario 
+                    con lo más actual en moda. Desde colores vibrantes hasta cortes innovadores, este artículo te guiará 
+                    a través de las prendas esenciales que no pueden faltar en tu colección.
+                </p>
+            </div> 
+        </section>
+        <!--Section Footer-->
+        <footer class="footer">
+            
+            <div class="footer-content container">
+                <div class="link">
+                    <h3>lorem</h3>
+                    <ul>
+                        <li><a href="#">Lorem</a></li>
+                    </ul>
+                </div>
+                
+                <div class="link">
+                    <h3>lorem</h3>
+                    <ul>
+                        <li><a href="#">Lorem</a></li>
+                        
+                    </ul>
+                </div>
+
+                <div class="link">
+                    <h3>lorem</h3>
+                    <ul>
+                        <li><a href="#">Lorem</a></li>
+                        
+                    </ul>
+                </div>
+                
+                <div class="link">
+                    <h3>lorem</h3>
+                    <ul>
+                        <li><a href="#">Lorem</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!--Vinvulo a los scrips-->
+        <script src="/js/script.js"></script>
+</body>
+</html>
